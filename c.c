@@ -1,9 +1,14 @@
 #include <stdio.h>
+  
+//WEEK1
 
 int main() {
     printf("Merhaba, Dünya!");
-     //tamamlandığını belirtiyomuss
+    return 0 ;  //tamamlandığını belirtiyomuss
 
+
+
+//WEEK
 /*
 int main() {
     int number1 = 10;

@@ -60,3 +60,22 @@ int main() {
     return 0;
 
 }
+
+int main() {
+    int n, i;
+    long long a = 0, b = 1, c;
+
+    printf("Fibonacci serisinin eleman sayisini girin: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Serisi: ");
+    for(i = 0; i < n; i++) {
+        printf("%lld ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    printf("\n");
+    return 0;
+}

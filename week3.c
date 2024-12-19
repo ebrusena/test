@@ -115,4 +115,28 @@ int main() {
 
 
 
+int fibonacci(int n) {
+    int a = 0, b = 1, c;
+    if (n == 0)
+        return a;
+    else if (n == 1)
+        return b;
+
+    for (int i = 2; i <= n; i++) {
+        c = a + b;  
+        a = b;      
+        b = c;    
+    }
+    return b;
+}
+
+int main() {
+    int sayi;
+    printf("Fibonacci dizisinin hangi terimini hesaplamak istersiniz? ");
+    scanf("%d", &sayi);
+    printf("Fibonacci dizisinin %d. terimi: %d\n", sayi, fibonacci(sayi));
+    return 0;
+}
+
+
 
